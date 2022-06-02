@@ -1,0 +1,28 @@
+C:\Users\Sharif\.Net projects\ICT-Training-Records-Management-System\Training Records Management System\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Sharif\.Net projects\ICT-Training-Records-Management-System\Training Records Management System\bin\Debug\net6.0\appsettings.json
+C:\Users\Sharif\.Net projects\ICT-Training-Records-Management-System\Training Records Management System\bin\Debug\net6.0\Training Records Management System.staticwebassets.runtime.json
+C:\Users\Sharif\.Net projects\ICT-Training-Records-Management-System\Training Records Management System\bin\Debug\net6.0\Training Records Management System.exe
+C:\Users\Sharif\.Net projects\ICT-Training-Records-Management-System\Training Records Management System\bin\Debug\net6.0\Training Records Management System.deps.json
+C:\Users\Sharif\.Net projects\ICT-Training-Records-Management-System\Training Records Management System\bin\Debug\net6.0\Training Records Management System.runtimeconfig.json
+C:\Users\Sharif\.Net projects\ICT-Training-Records-Management-System\Training Records Management System\bin\Debug\net6.0\Training Records Management System.dll
+C:\Users\Sharif\.Net projects\ICT-Training-Records-Management-System\Training Records Management System\bin\Debug\net6.0\Training Records Management System.pdb
+C:\Users\Sharif\.Net projects\ICT-Training-Records-Management-System\Training Records Management System\obj\Debug\net6.0\Training Records Management System.csproj.AssemblyReference.cache
+C:\Users\Sharif\.Net projects\ICT-Training-Records-Management-System\Training Records Management System\obj\Debug\net6.0\Training Records Management System.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sharif\.Net projects\ICT-Training-Records-Management-System\Training Records Management System\obj\Debug\net6.0\Training Records Management System.AssemblyInfoInputs.cache
+C:\Users\Sharif\.Net projects\ICT-Training-Records-Management-System\Training Records Management System\obj\Debug\net6.0\Training Records Management System.AssemblyInfo.cs
+C:\Users\Sharif\.Net projects\ICT-Training-Records-Management-System\Training Records Management System\obj\Debug\net6.0\Training Records Management System.csproj.CoreCompileInputs.cache
+C:\Users\Sharif\.Net projects\ICT-Training-Records-Management-System\Training Records Management System\obj\Debug\net6.0\Training Records Management System.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Sharif\.Net projects\ICT-Training-Records-Management-System\Training Records Management System\obj\Debug\net6.0\Training Records Management System.RazorAssemblyInfo.cache
+C:\Users\Sharif\.Net projects\ICT-Training-Records-Management-System\Training Records Management System\obj\Debug\net6.0\Training Records Management System.RazorAssemblyInfo.cs
+C:\Users\Sharif\.Net projects\ICT-Training-Records-Management-System\Training Records Management System\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Sharif\.Net projects\ICT-Training-Records-Management-System\Training Records Management System\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Sharif\.Net projects\ICT-Training-Records-Management-System\Training Records Management System\obj\Debug\net6.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Sharif\.Net projects\ICT-Training-Records-Management-System\Training Records Management System\obj\Debug\net6.0\scopedcss\bundle\Training Records Management System.styles.css
+C:\Users\Sharif\.Net projects\ICT-Training-Records-Management-System\Training Records Management System\obj\Debug\net6.0\scopedcss\projectbundle\Training Records Management System.bundle.scp.css
+C:\Users\Sharif\.Net projects\ICT-Training-Records-Management-System\Training Records Management System\obj\Debug\net6.0\Training Records Management System.dll
+C:\Users\Sharif\.Net projects\ICT-Training-Records-Management-System\Training Records Management System\obj\Debug\net6.0\refint\Training Records Management System.dll
+C:\Users\Sharif\.Net projects\ICT-Training-Records-Management-System\Training Records Management System\obj\Debug\net6.0\Training Records Management System.pdb
+C:\Users\Sharif\.Net projects\ICT-Training-Records-Management-System\Training Records Management System\obj\Debug\net6.0\Training Records Management System.genruntimeconfig.cache
+C:\Users\Sharif\.Net projects\ICT-Training-Records-Management-System\Training Records Management System\obj\Debug\net6.0\ref\Training Records Management System.dll
+C:\Users\Sharif\.Net projects\ICT-Training-Records-Management-System\Training Records Management System\bin\Debug\net6.0\Google.DataTable.Net.Wrapper.dll
+C:\Users\Sharif\.Net projects\ICT-Training-Records-Management-System\Training Records Management System\obj\Debug\net6.0\Training Records Management System.csproj.CopyComplete

@@ -16,5 +16,13 @@ namespace Training_Records_Management_System.Pages
         {
 
         }
+
+        public JsonResult GetPiechartJSON()
+        {
+            List<Charts> list = new List<Charts>();
+
+            return new JsonResult(list);
+        }
+
     }
 }

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "GK4XAc6G9ML8nT8Rm9a6SrHbB8QLv2Sfu7F0LYTW7ZAbaGlXmE2JPwW+VUE3bxm8+uwPOJZSYevOXMrer1aOYg==",
+  "dgSpecHash": "AUEFHR6TQqs3H7tLCeoFvBhvUiFztMURh2h3YOX9OQwcQeKYvfALB2lIPUaiMgDlznfEd7wNyERPZDkOJO8xwQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Sharif\\.Net projects\\ICT-Training-Records-Management-System\\Training Records Management System\\Training Records Management System.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Sharif\\.nuget\\packages\\google.datatable.net.wrapper\\4.1.0\\google.datatable.net.wrapper.4.1.0.nupkg.sha512"
+  ],
   "logs": []
 }
