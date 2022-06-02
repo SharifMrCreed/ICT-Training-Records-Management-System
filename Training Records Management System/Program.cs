@@ -1,7 +1,12 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Training_Records_Management_System.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddDbContext<ProjectContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("Training_Records_Management_SystemContext") ?? throw new InvalidOperationException("Connection string 'Training_Records_Management_SystemContext' not found.")));
 
 var app = builder.Build();
 
