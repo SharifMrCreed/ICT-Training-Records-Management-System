@@ -12,20 +12,53 @@ namespace Training_Records_Management_System.Pages.SubjectPages
 {
     public class IndexModel : PageModel
     {
-        private readonly Training_Records_Management_System.Data.ProjectContext _context;
+        private readonly ProjectContext _context;
 
-        public IndexModel(Training_Records_Management_System.Data.ProjectContext context)
+        public IndexModel(ProjectContext context)
         {
             _context = context;
         }
 
         public IList<Subject> Subject { get;set; } = default!;
 
+        public Subject Subj { get; set; } = default!;
+
         public async Task OnGetAsync()
         {
             if (_context.Subject != null)
             {
                 Subject = await _context.Subject.ToListAsync();
+            }
+        }
+
+        public async Task<IActionResult> OnPostAsync(int? id)
+        {
+            if (id == null || _context.Subject == null)
+            {
+                return NotFound();
+            }
+            var subject = await _context.Subject.FindAsync(id);
+
+            if (subject != null)
+            {
+                Subj = subject;
+                _context.Subject.Remove(Subj);
+                await _context.SaveChangesAsync();
+            }
+
+            return Page();
+        }
+
+        public async Task<JsonResult?> OnGetSubjectAsJsonAsync(int id)
+        {
+
+            if (_context.Subject != null)
+            {
+                return new JsonResult(await _context.Subject.FindAsync(id));
+            }
+            else
+            {
+                return null;
             }
         }
     }

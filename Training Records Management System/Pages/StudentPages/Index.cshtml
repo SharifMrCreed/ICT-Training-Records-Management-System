@@ -27,7 +27,7 @@
             <th>
                 @Html.DisplayNameFor(model => model.Student[0].Gender)
             </th>
-            <th class="text-end">
+            <th class="text-end" style="width: 15%">
                 <a class="btn btn-primary" asp-page="Create">New Trainee</a>
             </th>
         </tr>
@@ -63,7 +63,7 @@
                     </a>
                 </td>
                 <td class="text-end">
-                    <a class="btn" asp-page="./Edit" asp-route-id="@item.Id">
+                    <a class="btn btn-outline-dark" asp-page="./Edit" asp-route-id="@item.Id">
                         <img src= "~/edit.png">
                         </a>
                     <a class="btn btn-danger" asp-page="./Delete" asp-route-id="@item.Id">
