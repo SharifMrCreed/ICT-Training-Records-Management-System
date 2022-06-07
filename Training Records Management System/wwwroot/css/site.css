@@ -1,20 +1,20 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 #footer {
@@ -32,3 +32,31 @@ body {
     grid-auto-rows: minmax(100px, auto);
     gap: 20px;
 }
+
+#clickablerow {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+nav a {
+    transition: 0.3s ease;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 20px 0;
+    margin: 0 5px;
+    font-size: 17px;
+}
+
+    nav a:hover {
+        font-size: 21px;
+        padding: 6px 0;
+        color: blue;
+    }
+/*.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+    border-top: 4px solid #000000;
+    border-bottom: 4px solid #000000;
+    background: #11ADE8;
+    padding: 6px 0;
+}*/

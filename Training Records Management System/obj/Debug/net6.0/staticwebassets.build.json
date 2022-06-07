@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "CKp/tCXZrmIhvNGmTIzt+mJ2hQ6dG/fb3XpkqpNRvfA=",
+  "Hash": "D3XMn8UPznOMoIm4WL15mGmsm1JgP6JW5boccf35kMc=",
   "Source": "Training Records Management System",
   "BasePath": "_content/Training Records Management System",
   "Mode": "Default",
@@ -51,6 +51,23 @@
       "OriginalItemSpec": "C:\\Users\\Sharif\\.Net projects\\ICT-Training-Records-Management-System\\Training Records Management System\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Training Records Management System.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\Sharif\\.Net projects\\ICT-Training-Records-Management-System\\Training Records Management System\\wwwroot\\bin.png",
+      "SourceId": "Training Records Management System",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Sharif\\.Net projects\\ICT-Training-Records-Management-System\\Training Records Management System\\wwwroot\\",
+      "BasePath": "_content/Training Records Management System",
+      "RelativePath": "bin.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\bin.png"
+    },
+    {
       "Identity": "C:\\Users\\Sharif\\.Net projects\\ICT-Training-Records-Management-System\\Training Records Management System\\wwwroot\\css\\site.css",
       "SourceId": "Training Records Management System",
       "SourceType": "Discovered",
@@ -66,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\Sharif\\.Net projects\\ICT-Training-Records-Management-System\\Training Records Management System\\wwwroot\\edit.png",
+      "SourceId": "Training Records Management System",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Sharif\\.Net projects\\ICT-Training-Records-Management-System\\Training Records Management System\\wwwroot\\",
+      "BasePath": "_content/Training Records Management System",
+      "RelativePath": "edit.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\edit.png"
     },
     {
       "Identity": "C:\\Users\\Sharif\\.Net projects\\ICT-Training-Records-Management-System\\Training Records Management System\\wwwroot\\favicon.ico",
