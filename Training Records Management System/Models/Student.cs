@@ -49,7 +49,7 @@ namespace ICT_TRMS.Models
         public String Gender { get; set; } = string.Empty;
 
 
-        public ICollection<StudentMarks>? Marks { get; set; }
+        public ICollection<StudentMarks> Marks { get; set; } = default!;
 
     }
 
