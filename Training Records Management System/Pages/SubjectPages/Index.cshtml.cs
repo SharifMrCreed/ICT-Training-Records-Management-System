@@ -22,7 +22,7 @@ namespace Training_Records_Management_System.Pages.SubjectPages
         [BindProperty]
         public Subject Sub { get; set; } = default!;
 
-        public IList<Subject> Subject { get;set; } = default!;
+        public IList<Subject> Subject { get; set; } = default!;
 
         public async Task OnGetAsync()
         {
@@ -42,7 +42,53 @@ namespace Training_Records_Management_System.Pages.SubjectPages
             _context.Subject.Add(Sub);
             await _context.SaveChangesAsync();
 
-            return RedirectToPage("./Index"); 
+            return RedirectToPage("./Index");
+        }
+
+        public async void OnPostLoad(int id)
+        {
+            if (_context.Subject != null)
+            {
+                var s = await _context.Subject.FirstOrDefaultAsync(m => m.ID == id);
+                if (s != null)
+                {
+                    Sub = s;
+                }
+            }
+        }
+
+
+        public async Task<IActionResult> OnPostEditAsync(int id)
+        {
+            if (!ModelState.IsValid)
+            {
+                return Page();
+            }
+
+            _context.Attach(Sub).State = EntityState.Modified;
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!SubjectExists(id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return RedirectToPage("./Index");
+        }
+
+        private bool SubjectExists(int id)
+        {
+            return (_context.Subject?.Any(e => e.ID == id)).GetValueOrDefault();
         }
     }
 }

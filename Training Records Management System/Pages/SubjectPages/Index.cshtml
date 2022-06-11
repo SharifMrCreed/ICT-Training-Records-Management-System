@@ -16,7 +16,7 @@
                 @Html.DisplayNameFor(model => model.Subject[0].Title)
             </th>
             <th class="text-end" style="width: 15%">
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createModal">
                     New Subject
                 </button>
             </th>
@@ -26,12 +26,13 @@
         @foreach (var item in Model.Subject)
         {
             <tr>
-
                 <td>
-                    <a id="clickablerow" asp-page="./Edit" asp-route-id="@item.ID">
-                        @Html.DisplayFor(modelItem => item.Title)
-                    </a>
-
+                    <form asp-page-handler="load" method="post" asp-route-id="@item.ID">
+                        <a id="clickablerow">
+                            <input type="submit" id="clickablerow"  data-bs-toggle="modal" data-bs-target="#editModal">
+                            @Html.DisplayFor(modelItem => item.Title)
+                        </a>
+                    </form>
                 </td>
                 <td class="text-end">
                     <a class="btn btn-danger" asp-page="./Delete" asp-route-id="@item.ID">
@@ -43,7 +44,7 @@
     </tbody>
 </table>
 
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -62,6 +63,33 @@
                     <br />
                     <div class="text-end">
 
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <input type="submit" value="Save" class="btn btn-primary" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="exampleModalLabel">Details</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form asp-page-handler="edit" method="post">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="Sub.ID" />
+                    <div class="form-group">
+                        <label asp-for="Sub.Title" class="control-label"></label>
+                        <input asp-for="Sub.Title" class="form-control" />
+                        <span asp-validation-for="Sub.Title" class="text-danger"></span>
+                    </div>
+                    <br />
+                    <div class="form-group">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                         <input type="submit" value="Save" class="btn btn-primary" />
                     </div>
