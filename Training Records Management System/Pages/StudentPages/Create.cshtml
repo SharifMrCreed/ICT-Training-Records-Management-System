@@ -75,7 +75,10 @@
                     <br />
                     <div class="form-group">
                         <label asp-for="Student.Gender" class="control-label"></label>
-                        <input asp-for="Student.Gender" class="form-control" />
+                        <select asp-for="Student.Gender" class="form-control">
+                            <option>MALE</option>
+                            <option>FEMALE</option>
+                        </select>
                         <span asp-validation-for="Student.Gender" class="text-danger"></span>
                     </div>
 

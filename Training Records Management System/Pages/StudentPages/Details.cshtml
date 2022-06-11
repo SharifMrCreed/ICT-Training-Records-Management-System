@@ -14,7 +14,7 @@
             <div class="card">
                 <div class="card-body">
                     <div class="text-center">
-                        <img src="~/profile.png" class = "rounded" />
+                        <img src="~/profile.png" class="rounded" />
                     </div>
                     <br />
                     <div>
@@ -88,18 +88,36 @@
         </div>
     </div>
     <br />
-    <div class = "card">
-    <div class = "card-body">
-            @foreach(var mark in Model.Student.Marks)
-            {
-                
-            }
+    @if (Model.Student.Marks.Count > 0)
+    {
+        <div class="card col">
+            <div class="card-body ">
+
+                <div class="row text-center">
+                    @foreach (var mark in Model.Student.Marks)
+                    {
+                        <div class="card text-center col-sm-2 m-2">
+                            <div class="card-body text-centre">
+                                <a id="clickablerow" asp-page="/MarksPages/Edit" asp-route-id="@mark.Id">
+                                    @mark.Subject.Title
+                                    <div class="h3">
+                                        @mark.Mark
+                                    </div>
+                                    @mark.Grade
+                                </a>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
         </div>
+    }
+    <br />
+    <div class="text-center">
+        <a class="btn btn-outline-primary" asp-page="./Index">Back</a>
+        <a class="btn btn-primary" asp-page="./Edit" asp-route-id="@Model.Student?.Id">Edit</a>
+        <a class="btn btn-secondary" asp-page="/MarksPages/Create" asp-route-id="@Model.Student?.Id">Add Marks</a>
+
     </div>
 </div>
 
-<div class = "text-center">
-    <br />
-    <a asp-page="./Index" class = "btn btn-outline-primary>Back </a>
-    <a asp-page="./Edit" asp-route-id="@Model.Student?.Id"  class = "btn btn-primary">Edit</a>
-</div>

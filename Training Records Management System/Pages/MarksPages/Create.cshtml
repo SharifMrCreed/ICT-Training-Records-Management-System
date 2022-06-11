@@ -1,0 +1,57 @@
+﻿@page
+@model Training_Records_Management_System.Pages.MarksPages.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="text-center">
+    <h3>Add @Model.Student.LastName @Model.Student.FirstName's Marks</h3>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-body text-centre">
+                    <form method="post">
+                        <br />
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="form-group">
+                            <input asp-for="StudentMarks.StudentId" class="form-control" value = "@Model.Student.Id" type = "hidden"/>
+                            <label asp-for="StudentMarks.SubjectId" class="control-label">Subject</label>
+                            <br />
+                            <select asp-for="StudentMarks.SubjectId" class="form-control" asp-items="Model.Options"></select>
+                        </div>
+                        <br />
+                        <div class="form-group">
+                            <label asp-for="StudentMarks.Mark" class="control-label"></label>
+                            <br />
+                            <input asp-for="StudentMarks.Mark" class="form-control" />
+                            <span asp-validation-for="StudentMarks.Mark" class="text-danger"></span>
+                        </div>
+                        <br />
+                        <div class="form-group  text-end">
+                            <a asp-page="/StudentPages/Details" class="btn btn-outline-danger" asp-route-id="@Model.Student?.Id">Cancel</a>
+                            <input type="submit" value="Save" class="btn btn-primary" />
+                        </div>
+                        <br />
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+        </div>
+    </div>
+</div>
+
+<div>
+</div>
+
+@section Scripts {
+    @{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
+}

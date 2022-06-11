@@ -17,5 +17,7 @@ namespace Training_Records_Management_System.Data
         public DbSet<ICT_TRMS.Models.Subject>? Subject { get; set; }
 
         public DbSet<ICT_TRMS.Models.Student>? Student { get; set; }
+
+        public DbSet<ICT_TRMS.Models.StudentMarks>? StudentMarks { get; set; }
     }
 }

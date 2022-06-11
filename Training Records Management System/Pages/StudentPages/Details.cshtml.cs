@@ -19,7 +19,9 @@ namespace Training_Records_Management_System.Pages.StudentPages
             _context = context;
         }
 
-      public Student Student { get; set; } = default!; 
+        public Student Student { get; set; } = default!;
+
+        public List<StudentMarks> StudentsMarks { get; set; } = default!;
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -33,10 +35,16 @@ namespace Training_Records_Management_System.Pages.StudentPages
             {
                 return NotFound();
             }
-            else 
+            else
             {
                 Student = student;
             }
+
+            if (_context.StudentMarks != null) StudentsMarks = _context.StudentMarks
+                     .Where(a => a.StudentId == id)
+                 .Include(s => s.Subject)
+                 .ToList();
+            Student.Marks = StudentsMarks;
             return Page();
         }
     }
