@@ -19,6 +19,9 @@ namespace Training_Records_Management_System.Pages.SubjectPages
             _context = context;
         }
 
+        [BindProperty]
+        public Subject Sub { get; set; } = default!;
+
         public IList<Subject> Subject { get;set; } = default!;
 
         public async Task OnGetAsync()
@@ -27,6 +30,19 @@ namespace Training_Records_Management_System.Pages.SubjectPages
             {
                 Subject = await _context.Subject.ToListAsync();
             }
+        }
+
+        public async Task<IActionResult> OnPostCreateAsync()
+        {
+            if (!ModelState.IsValid || _context.Subject == null || Sub == null)
+            {
+                return Page();
+            }
+
+            _context.Subject.Add(Sub);
+            await _context.SaveChangesAsync();
+
+            return RedirectToPage("./Index"); 
         }
     }
 }
